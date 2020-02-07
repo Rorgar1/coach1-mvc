@@ -7,7 +7,7 @@
 
 <body>
 
-	<form action="processForm" method="GET">
+	<form action="processFormVersionTwo" method="GET">
 	
 		<input type="text" name="coachName" 
 			placeholder="Enter coach's name" />
