@@ -4,6 +4,7 @@ public class Athlete {
 	
 	private String firstName;
 	private String lastName;
+	private String country;
 	
 	public Athlete() {
 		
@@ -23,6 +24,14 @@ public class Athlete {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
 	}
 
 	

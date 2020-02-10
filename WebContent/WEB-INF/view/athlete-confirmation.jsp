@@ -7,7 +7,9 @@
 <body>
 
 	The athlete is confirmed: ${athlete.firstName} ${athlete.lastName}
+	<br><br>
 	
+	Country: ${athlete.country}	
 	
 
 
