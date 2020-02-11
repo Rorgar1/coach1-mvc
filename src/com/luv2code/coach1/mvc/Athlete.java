@@ -1,9 +1,16 @@
 package com.luv2code.coach1.mvc;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Athlete {
 	
 	private String firstName;
+	
+	@NotNull(message="field is required")
+	@Size(min=1, message="field is required")
 	private String lastName;
+	
 	private String country;
 	
 	public Athlete() {

@@ -4,15 +4,24 @@
 <html>
 <head>
 	<title>Athlete Registration Form</title>
+	
+	<style>
+		.error {color:red}
+	</style>
+	<br>
+		
 </head>
 
 <body>
+<i>(*) indicates required field</i>
+<br><br><br>
 
 	<form:form action="processForm" modelAttribute="athlete">
 	
 		First name: <form:input path="firstName" />
 		<br><br>
-		Last name: <form:input path="lastName" />
+		Last name (*): <form:input path="lastName" />
+		<form:errors path="lastName" cssClass="error" />
 		<br><br>
 		
 		Country: 
