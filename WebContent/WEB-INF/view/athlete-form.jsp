@@ -64,6 +64,10 @@
 		<form:errors path="age" cssClass="error" />
 		<br><br>
 		
+		Preferred Drink Color (Gatorade): <form:input path="drinkName" />
+		<form:errors path="drinkName" cssClass="error" />
+		<br><br>
+		
 		<br><br>
 		<input type="submit" value="Submit" />
 	

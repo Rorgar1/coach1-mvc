@@ -6,6 +6,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.luv2code.coach1.mvc.validation.DrinkName;
+
 public class Athlete {
 	
 	private String firstName;
@@ -29,7 +31,8 @@ public class Athlete {
 	@Pattern(regexp="^[0-9]{2}", message="Enter 2-digit year")
 	private String age;
 	
-	
+	@DrinkName
+	private String drinkName;
 	
 	
 	public Athlete() { }
@@ -91,6 +94,14 @@ public class Athlete {
 
 	public void setAge(String age) {
 		this.age = age;
+	}
+
+	public String getDrinkName() {
+		return drinkName;
+	}
+
+	public void setDrinkName(String drinkName) {
+		this.drinkName = drinkName;
 	}
 	
 	

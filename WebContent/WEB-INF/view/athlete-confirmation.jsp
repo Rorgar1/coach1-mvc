@@ -31,6 +31,8 @@
 	
 	Age of Athlete: ${athlete.age}
 	<br><br>
+	
+	Preferred Drink Name: ${athlete.drinkName}
 
 </body>
 
