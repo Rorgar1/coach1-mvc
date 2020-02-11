@@ -13,10 +13,17 @@ public class Athlete {
 	
 	private String country;
 	
+	private String preferredSport;
+	
+	private String[] practiceDay;
+	
 	public Athlete() {
 		
 	}
+	
 
+	
+	// getters and setters
 	public String getFirstName() {
 		return firstName;
 	}
@@ -41,6 +48,22 @@ public class Athlete {
 		this.country = country;
 	}
 
+	public String getPreferredSport() {
+		return preferredSport;
+	}
+
+	public void setPreferredSport(String preferredSport) {
+		this.preferredSport = preferredSport;
+	}
+
+	public String[] getPracticeDay() {
+		return practiceDay;
+	}
+
+	public void setPracticeDay(String[] practiceDay) {
+		this.practiceDay = practiceDay;
+	}
+	
 	
 	
 }

@@ -33,6 +33,28 @@
 			<form:option value="Germany" label="Germany" />
 			<form:option value="Japan" label="Japan" />
 		</form:select>
+		<br><br>
+		
+		Preferred Sport:
+		
+		Soccer <form:radiobutton path="preferredSport" value="Soccer"/>
+		Baseball <form:radiobutton path="preferredSport" value="Baseball"/>
+		Basketball <form:radiobutton path="preferredSport" value="Basketball"/>
+		Tennis <form:radiobutton path="preferredSport" value="Tennis"/>
+		Track <form:radiobutton path="preferredSport" value="Track"/>
+		<br><br>
+		
+		Practice Day Availability (check all that apply):
+		
+		Monday <form:checkbox path="practiceDay" value="Monday" />
+		Tuesday <form:checkbox path="practiceDay" value="Tuesday" />
+		Wednesday <form:checkbox path="practiceDay" value="Wednesday" />
+		Thursday <form:checkbox path="practiceDay" value="Thursday" />
+		Friday <form:checkbox path="practiceDay" value="Friday" />
+		Saturday <form:checkbox path="practiceDay" value="Saturday" />
+		Sunday <form:checkbox path="practiceDay" value="Sunday" />
+		<br><br>
+		
 		
 		<br><br>
 		<input type="submit" value="Submit" />

@@ -12,7 +12,19 @@
 	<br><br>
 	
 	Country: ${athlete.country}	
+	<br><br>
 	
+	Preferred Sport: ${athlete.preferredSport}
+	<br><br>
+	
+	Practice Day Availability:
+	
+	<ul>
+		<c:forEach var="temp" items="${athlete.practiceDay}">
+			<li> ${temp} </li>
+		</c:forEach>
+	</ul>
+
 
 
 </body>
