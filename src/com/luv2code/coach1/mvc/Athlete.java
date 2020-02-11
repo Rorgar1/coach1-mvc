@@ -1,6 +1,9 @@
 package com.luv2code.coach1.mvc;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class Athlete {
@@ -17,9 +20,19 @@ public class Athlete {
 	
 	private String[] practiceDay;
 	
-	public Athlete() {
-		
-	}
+	@NotNull(message="required field")
+	@Min(value=0, message="must be zero or greater")
+	@Max(value=5, message="limit of 5 passes")
+	private Integer freePasses;
+	
+	@NotNull(message="required field")
+	@Pattern(regexp="^[0-9]{2}", message="Enter 2-digit year")
+	private String age;
+	
+	
+	
+	
+	public Athlete() { }
 	
 
 	
@@ -62,6 +75,22 @@ public class Athlete {
 
 	public void setPracticeDay(String[] practiceDay) {
 		this.practiceDay = practiceDay;
+	}
+
+	public Integer getFreePasses() {
+		return freePasses;
+	}
+
+	public void setFreePasses(Integer freePasses) {
+		this.freePasses = freePasses;
+	}
+
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
 	}
 	
 	

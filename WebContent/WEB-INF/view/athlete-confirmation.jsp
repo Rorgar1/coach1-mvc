@@ -24,8 +24,13 @@
 			<li> ${temp} </li>
 		</c:forEach>
 	</ul>
-
-
+	<br><br>
+	
+	Free Game Passes Requested: ${athlete.freePasses}
+	<br><br>
+	
+	Age of Athlete: ${athlete.age}
+	<br><br>
 
 </body>
 

@@ -13,13 +13,14 @@
 </head>
 
 <body>
-<i>(*) indicates required field</i>
+<i>Please Complete the Form. (*) indicates required field</i>
 <br><br><br>
 
 	<form:form action="processForm" modelAttribute="athlete">
 	
 		First name: <form:input path="firstName" />
 		<br><br>
+		
 		Last name (*): <form:input path="lastName" />
 		<form:errors path="lastName" cssClass="error" />
 		<br><br>
@@ -55,6 +56,13 @@
 		Sunday <form:checkbox path="practiceDay" value="Sunday" />
 		<br><br>
 		
+		Number of Free Game Passes Requested(*): <form:input path="freePasses" />
+		<form:errors path="freePasses" cssClass="error" />
+		<br><br>
+		
+		Age of Athlete(*): <form:input path="age" />
+		<form:errors path="age" cssClass="error" />
+		<br><br>
 		
 		<br><br>
 		<input type="submit" value="Submit" />
